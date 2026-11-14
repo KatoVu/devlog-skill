@@ -5,8 +5,8 @@
   "author": {
     "name": "KatoVu"
   },
-  "homepage": "https://github.com/KatoVu/devlog",
-  "repository": "https://github.com/KatoVu/devlog",
+  "homepage": "https://github.com/KatoVu/devlog-skill",
+  "repository": "https://github.com/KatoVu/devlog-skill",
   "license": "MIT",
   "keywords": ["blog", "technical-writing", "devlog", "documentation"]
 }

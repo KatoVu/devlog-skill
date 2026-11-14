@@ -7,7 +7,7 @@ and makes the thumbnail, trailer and screenshots by running your app. Everything
 ## Install
 
 ```
-/plugin marketplace add KatoVu/devlog
+/plugin marketplace add KatoVu/devlog-skill
 /plugin install devlog@devlog
 ```
 
