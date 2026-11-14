@@ -1,6 +1,6 @@
 ---
 name: post
-description: Write a technical blog post about a codebase. It's researched from the code, every claim is checked against it, and the thumbnail, trailer and screenshots are made locally. Use when the user asks for a blog post, devlog, write-up, case study, article or "post about" a project, repo, feature, PR or commit range, or wants to turn their code into something to publish. Works fully offline into a local folder. Publishes to BlogRAG through the blograg MCP server, but only when the user explicitly asks for that.
+description: Write a technical blog post about a codebase. It's researched from the code, every claim is checked against it, and the thumbnail, trailer and screenshots are made locally. Use when the user asks for a blog post, devlog, write-up, case study, article or "post about" a project, repo, feature, PR or commit range, or wants to turn their code into something to publish. Works fully offline into a local folder.
 argument-hint: "[path | topic] [--out DIR]"
 ---
 
@@ -22,9 +22,6 @@ Everything is written to a local folder. Nothing leaves the machine unless the a
 - **Secrets never appear.** Don't open the files `scan_repo.py` lists under "Do not read or quote".
   Run `secret_scan.py` over the draft before calling it done. Screenshots use demo or seed data,
   never real users' data or anything that shows a token.
-- **Don't touch BlogRAG unless asked.** This skill doesn't call any `blograg` MCP tool unless the
-  author explicitly asks you to post, upload or publish to BlogRAG. That includes reading their posts.
-  When they do ask, follow [references/blograg.md](references/blograg.md).
 - **Ask before anything heavy or outward-facing.** That means installing dependencies, starting
   containers, running migrations, or anything that needs credentials. Reading code and running the
   scripts below doesn't need permission.
@@ -125,7 +122,7 @@ source_commit: "…"    # HEAD when written, so claims stay checkable
 ```
 
 Embed local pictures as `![alt text that describes the picture](assets/name.png)`. Put diagrams
-in ` ```mermaid ` blocks. BlogRAG renders them, and so do GitHub and most static sites.
+in ` ```mermaid ` blocks. GitHub and most static sites render them.
 
 ### 7. Make the visuals
 
@@ -150,11 +147,4 @@ demo data only. Stop everything you started when you're done.
 ### 9. Hand off
 
 Tell the author where the folder is, give the word count, list the visuals made, and name anything
-cut for lack of evidence. If the blograg MCP tools are available in this session, mention that you
-can upload it as a BlogRAG draft. Then **stop**: don't upload until they ask.
-
-## Publishing to BlogRAG
-
-Only when the author explicitly asks ("post it to BlogRAG", "upload this as a draft", "publish it").
-Follow [references/blograg.md](references/blograg.md) exactly. In short: drafts only, upload every
-asset through `request_upload`, and call `publish_post` only if they said *publish*.
+cut for lack of evidence. Then **stop**.

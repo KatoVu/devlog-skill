@@ -8,7 +8,7 @@
   "plugins": [
     {
       "name": "devlog",
-      "description": "Turns a codebase into a technical blog post, with a thumbnail, trailer and screenshots. Publishes to BlogRAG only when you ask.",
+      "description": "Turns a codebase into a technical blog post, with a thumbnail, trailer and screenshots.",
       "source": "./",
       "category": "productivity"
     }
