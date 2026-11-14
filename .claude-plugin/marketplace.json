@@ -1,0 +1,16 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "devlog",
+  "description": "Write technical blog posts from your codebase.",
+  "owner": {
+    "name": "KatoVu"
+  },
+  "plugins": [
+    {
+      "name": "devlog",
+      "description": "Turns a codebase into a technical blog post, with a thumbnail, trailer and screenshots. Publishes to BlogRAG only when you ask.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}

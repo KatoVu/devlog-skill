@@ -1,0 +1,12 @@
+{
+  "name": "devlog",
+  "version": "0.1.0",
+  "description": "Turns a codebase into a technical blog post — researched from the code, every claim checked against it, with a thumbnail, a trailer and screenshots made locally. Publishes to BlogRAG only when you ask.",
+  "author": {
+    "name": "KatoVu"
+  },
+  "homepage": "https://github.com/KatoVu/devlog",
+  "repository": "https://github.com/KatoVu/devlog",
+  "license": "MIT",
+  "keywords": ["blog", "technical-writing", "devlog", "documentation", "blograg"]
+}
